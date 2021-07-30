@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Merriweather:ital,wght@0,400;0,900;1,400&display=swap");
+
+html {
+  font-family: "Merriweather", serif;
+}
+html body {
+  background: #f1f1f1;
+  color: #2a2a2a;
+  font-size: 16px;
+  line-height: 1.125;
+  font-family: Georgia, "Merriweather", "Lucida Grande", "Lucida Sans Unicode",
+    "GNU Unifont", Verdana, Helvetica, sans-serif;
+}
+
+/* TYPOGRAPHY */
+html blockquote,
+html p {
+  font-size: 16px;
+  line-height: 1.125;
+  font-family: Georgia, "Merriweather", "Lucida Grande", "Lucida Sans Unicode",
+    "GNU Unifont", Verdana, Helvetica, sans-serif;
+}
+html header,
+html #header .primary,
+html body,
+html .toggled form,
+html .dynamic form,
+html .secondary,
+html .dropdown {
+  font-family: "Lucida Grande", "Merriweather Sans", "Lucida Grande",
+    "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, sans-serif;
+}
+
+html h4.heading,
+html .blurb h4.heading,
+html .blurb .header h4.heading {
+  color: #666;
+  text-transform: uppercase;
+  font-family: "Merriweather Sans", "Lucida Grande";
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+html h4.heading a,
+html .blurb h4.heading a,
+html .blurb .header h4.heading a {
+  text-transform: initial;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+}
+
+html h4.heading a:first-child,
+html .blurb h4.heading a:first-child {
+  color: #000;
+  line-height: 2rem;
+  display: block;
+  padding-top: 1rem;
+}
+html h4.heading a:nth-child(2),
+html .blurb h4.heading a:nth-child(2) {
+  color: #111;
+  font-size: 1rem;
+}
+html h4.heading a:hover,
+html .blurb h4.heading a:hover {
+  color: 000;
+}
+html .commas li:after {
+  opacity: 0.01;
+}
+
+/*WRAPPER*/
+
+.wrapper {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+dl.meta {
+  border: 0px solid #ccc;
+  clear: right;
+  padding: 1.286em 0.75em;
+  position: relative;
+  overflow: hidden;
+}
+
+a.tag {
+  background: #ccc;
+  padding: 0.125rem 0.5rem;
+  color: #111;
+  line-height: 1.25rem;
+  text-decoration: none;
+  border-bottom: 0px dotted;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+h2.heading a.tag {
+  font-size: 100%;
+  line-height: 100%;
+  background: linear-gradient(to left, #860eb5, #b50eb0) !important;
+  color: #fff;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.meta .stats dl dt,
+.blurb dl.stats dt {
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+.meta .stats dl dd,
+.meta dd ul li,
+.blurb ul li,
+.blurb dd ul li {
+  line-height: 1.5rem;
+}
+
+/*WORK*/
+
+.work .navigation.actions {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+#workskin {
+  max-width: 62em;
+  border-top: 1px solid #ccc;
+  padding-bottom: 3rem;
+}
+#add_comment_placeholder,
+#comments_placeholder {
+  max-width: 62em;
+  margin: 0 auto;
+}
+
+#chapters {
+  background: #fff;
+  margin: 0rem auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 52rem;
+  box-shadow: 0 1rem 3rem -1rem rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+}
+
+.userstuff {
+  /*max-width: 46rem;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+.userstuff p {
+  line-height: 1.85rem;
+  line-height: 1.5rem; /* smaller line height for georgia font */
+  padding: 0 4rem;
+}
+.userstuff p + p {
+  margin-top: 0;
+  margin-bottom: 1.85rem;
+}
+
+#workskin > div.preface {
+  margin: 0.5em 3rem 1rem 3rem;
+  padding: 0.643em 0.643em 0;
+  float: none;
+}
+
+#chapters div.preface .summary,
+#chapters div.preface .notes {
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 4rem 1rem;
+}
+#chapters div.preface .summary > h3,
+#chapters div.preface .notes > h3 {
+  border: none;
+}
+#chapters .userstuff + div.preface {
+  margin-top: 3rem;
+}
+div.preface h2.title,
+div.preface h2.title a {
+  color: #222;
+  font-weight: 900;
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: "Lucida Grande", "Merriweather Sans", "Lucida Grande",
+    "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, sans-serif;
+}
+
+h3.title,
+h3.title a {
+  color: #222;
+  font-weight: 900;
+}
+
+div.preface .byline:before {
+  content: "BY ";
+  font-size: 0.875rem;
+  color: #666;
+}
+div.preface .byline,
+div.preface .byline a {
+  font-weight: 500;
+  color: #222;
+  text-align: left;
+}
+div.preface .byline a {
+  border-bottom: 1px dotted #900;
+}
+
+/*
+div.preface .byline a:before{
+    content: "\0040";
+}
+*/
+
+div.preface .notes,
+div.preface .summary,
+div.preface .series,
+div.preface .children {
+}
+div.preface .summary {
+  margin-top: 2rem;
+}
+div.preface .summary h3.heading,
+div.preface .notes h3.heading,
+.work_endnotes {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana,
+    Helvetica, sans-serif;
+  opacity: 0.8;
+  border-bottom: none;
+}
+div.preface blockquote p {
+  font-size: 0.875rem;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana,
+    Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.chapter {
+  position: relative;
+}
+.chapter .preface {
+  border-top: 0px solid #ccc;
+}
+.chapter .preface::before {
+  content: "\00a7";
+  position: absolute;
+  left: 50%;
+  top: -2rem;
+  transform: rotate(90deg);
+}
+.chapter .preface::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #111;
+  margin: 0 auto;
+  display: none;
+}
+
+.chapter .preface h3.title {
+  position: relative;
+  margin-bottom: 1.875rem;
+}
+.chapter .preface h3.title a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.chapter .preface h3.title:before,
+.chapter .preface h3.title:after {
+  /*content:  "\00A7";*/
+  content: "";
+  width: 70%;
+  height: 0px;
+  margin: 0 auto;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -10px;
+}
+.chapter .preface h3.title:after {
+  margin-top: unset;
+  height: 1px;
+  top: 100%;
+  margin-top: 10px;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.userstuff hr {
+  width: 66%;
+  margin: 0.875em auto 1.2525em auto;
+  border: 0px solid;
+  border-bottom: 1px solid #aaa;
+}
+
+#work_endnotes {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* BUTTONS */
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions input,
+input[type="submit"],
+button,
+.current,
+.actions label {
+  color: #eee;
+  background: #333;
+  border: none;
+  box-shadow: none;
+  padding: 0.25em 0.95em;
+  border-radius: 0.25rem;
+}
+
+.action.top {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions a:focus,
+.actions input:focus,
+label.action:hover,
+.action:hover,
+.action:focus {
+  color: #fff;
+  border-top: 0px solid #999;
+  border-left: 0px solid #999;
+  background: #666;
+  background: linear-gradient(to left, #860eb5, #b50eb0);
+  box-shadow: 0 0.1rem 0.3rem -0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.actions a:visited,
+.actions input:visited,
+.actions label.action:visited,
+.action:visited,
+.action:visited {
+  color: #eee;
+}
+
+/* HEADER */
+#header {
+  background: #f1f1f1;
+}
+#header .heading {
+  padding: 1rem 0.5rem 1rem 2rem;
+}
+#header #greeting {
+  padding: 1rem 0.5rem 0 0;
+}
+#header .primary {
+  background: transparent;
+  box-shadow: none;
+}
+#header .primary li {
+}
+#header .primary a {
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+html #header h1,
+html #header .heading a {
+  font-family: "Merriweather Sans";
+  color: #111;
+}
+#header .logo {
+  display: none;
+}
+
+#header li .search {
+  padding-right: 1rem;
+}
+#header #search .text {
+  margin: 0.2857em 0.429em;
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.2) inset;
+  outline: none;
+}
+
+#feedback {
+}
+
+#feedback .actions {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/*COMMENTS*/
+
+#add_comment {
+  border: none;
+}
+#add_comment div.comment {
+  background: transparent;
+}
+div.comment {
+  border: none;
+}
+.post.comment fieldset {
+  background: #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+div.comment,
+li.comment {
+  border: none;
+  background: #e1e1e1;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.thread .even {
+  background: rgba(0, 0, 0, 0.05);
+}
+.comment h4.byline {
+  background: transparent;
+}
+.comment div.icon {
+  border-radius: 10rem;
+  overflow: hidden;
+  border-bottom: none;
+  box-shadow: 0 2px 1rem -0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.comment .userstuff {
+  margin-top: 1em;
+  min-height: 3.3em;
+  padding-left: 2.5rem;
+}
+
+/*BLURBS*/
+li.blurb,
+.blurb .blurb {
+  border: 0px solid red;
+  background: #fff;
+  /*padding: .429em .75em;*/
+  padding: 0;
+  max-width: 70em;
+  margin: 1rem auto;
+  box-shadow: 0 1rem 1rem -1rem rgb(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+.blurb:hover {
+  box-shadow: 0 1rem 1.5rem -1rem rgb(0, 0, 0, 0.4);
+}
+
+.blurb .header .heading {
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.blurb .header h5.heading {
+  color: #bbb;
+  margin-left: 5rem;
+  border-top: 1px dotted #ccc;
+}
+
+.blurb .tags {
+  margin-left: 5rem;
+}
+.blurb .tags .tag {
+  height: 1.25rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  /*background: transparent !important;*/
+}
+.blurb .tags a.tag:hover,
+.blurb .tags .relationships a.tag:hover,
+.blurb .tags .characters a.tag:hover,
+.blurb .tags .freeforms a.tag:hover {
+  color: #000;
+  background: #ccc;
+}
+.blurb .tags .warnings a.tag:hover {
+  background: transparent;
+}
+
+/*
+.blurb .tags li.warnings + li.relationships::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.blurb .tags li.relationships + li.characters::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.blurb .tags li.characters + li.freeforms::before{
+    content: "\a";
+    white-space: pre;
+}
+
+.blurb .tags li.warnings + li.relationships::before{
+    content: "\a";
+    white-space: pre;
+}
+*/
+.tags.warning .tag,
+.blurb .tags .warnings .tag {
+  color: #900;
+  background: transparent;
+}
+
+.tags.fandom .tag,
+.blurb .tags fandom .tag,
+.fandoms a.tag {
+  background: #f6d6af;
+  background: #ca7610;
+  color: #fff;
+}
+
+.tags.relationship a.tag,
+.blurb .tags .relationships .tag {
+  background: #900;
+  color: #fff;
+}
+.tags.character a.tag,
+.blurb .tags .characters a.tag {
+  background: #ccc;
+  background: #f1d6d9;
+}
+.blurb .tags .characters .tag:before {
+  width: 11px;
+  height: 11px;
+  line-height: 1.85rem;
+  display: inline-block;
+  display: none;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  opacity: 0.7;
+  /*background-image: 
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' viewBox='0 0 448 512'><path fill='gray' d='M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z'/></svg>");*/
+  content: "";
+}
+.tags.freeform a.tag,
+.blurb .tags .freeforms a.tag {
+  /*border-radius: 3px;*/
+  /*background: hsla(297, 23%, 48%, .2);*/
+  background: #dadada;
+  background: rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+  padding: 0 0.5rem 0 0.5rem;
+  display: inline-block;
+}
+a.tag:hover,
+.listbox .heading a.tag:visited:hover {
+  color: #fff !important;
+  background: linear-gradient(to left, #860eb5, #b50eb0) !important;
+  opacity: 0.8;
+}
+
+.blurb .tags .freeforms .tag:before {
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  display: inline-block;
+  display: none;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  opacity: 0.7;
+  /*background-image: 
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false'  viewBox='0 0 512 512'><path fill='currentColor' d='M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z'/></svg>");*/
+  background-size: 9px 9px;
+  background-position: 4px center;
+  content: "";
+}
+
+.blurb .summary {
+  line-height: 1.85rem;
+}
+
+.blurb blockquote.userstuff.summary {
+  margin: 3rem 2rem 2rem 5rem;
+  padding: 0;
+}
+.blurb blockquote.userstuff.summary:before {
+  content: "\00a7";
+  position: absolute;
+  left: 50%;
+  margin-top: -2.5rem;
+  transform: rotate(90deg);
+}
+.blurb blockquote p {
+  padding: 0;
+}
+
+.blurb ul.series {
+  margin-left: 5rem;
+}
+
+.blurb dl.stats {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+  text-align: left;
+  float: unset;
+  padding-left: 5rem;
+}
+.blurb .actions {
+  float: none;
+  padding-left: 5rem;
+  text-align: left;
+  padding-top: 0.5rem;
+}
+.bookmark .user {
+  background: #fafff0;
+  /*width: calc(100% + 1.4rem);*/
+  margin: 1rem 0;
+  border: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: none;
+  border-top: 1px solid #daded2;
+}
+
+.datetime {
+  font-family: "merriweather sans";
+  background: #bfbfbf36;
+  padding: 0.5rem 1rem;
+  margin: -0.7rem;
+  font-size: 0.75rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.blurb ul.required-tags {
+  position: absolute;
+  top: 6rem;
+  width: 60px;
+  margin: 0;
+  left: 1rem;
+}
+.blurb ul.required-tags li,
+.blurb ul.required-tags li a,
+.blurb ul.required-tags li span {
+  border-radius: 3px;
+  box-shadow: 0 0 1px white inset;
+}
+
+/* PAGING */
+
+.actions li .current {
+  background: #999;
+  color: #fff;
+  opacity: 0.4;
+}
+
+/* NAVIGATION */
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu {
+  background: #ddd;
+  padding: 0;
+}
+#header .dropdown:hover a.dropdown-toggle {
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+#header .menu,
+#small_login,
+#header .dropdown:hover .current + .menu {
+  box-shadow: 0 0.1rem 0.2rem -0.1rem rgba(0, 0, 0, 0.9);
+}
+
+#header .menu li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+#header .menu li:first-child {
+  border-top: none;
+}
+
+#main ul.navigation.actions {
+}
+#main ul.navigation.actions > * {
+  padding: 0;
+  margin: 0;
+}
+.actions a,
+.actions a:link,
+.actions li .current,
+.actions li input[type="submit"] {
+  border-radius: 0.5rem;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  /*border-radius: 0;*/
+  /*border-left: 1px solid #aaa;*/
+}
+.actions a:active,
+.actions a:link:active,
+.actions li .current:active {
+  opacity: 0.8;
+}
+/*
+#main ul.navigation.actions li:first-child a, 
+#main ul.navigation.actions li:first-child .current  {
+    border-radius: .5rem 0 0 .5rem;
+    border-left: none;
+}
+
+#main ul.navigation.actions li:last-child a, 
+#main ul.navigation.actions li:last-child .current  {
+    border-radius: 0 .5rem .5rem 0;
+}
+*/
+/* LISTBOX */
+.listbox,
+fieldset fieldset.listbox {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.listbox .index {
+  background: transparent;
+  box-shadow: none;
+}
+.listbox p.actions {
+  float: left;
+}
+/*FORMS*/
+
+form dt {
+  border-bottom: 1px dotted #222;
+  padding-top: 0.5rem;
+}
+
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff {
+  background: #ddd;
+  box-shadow: none;
+  border: none;
+}
+
+form.verbose fieldset {
+  margin-top: 2rem;
+}
+form.verbose legend {
+  position: relative;
+  top: -1rem;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: #ddd;
+  border: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  margin-left: -0.5rem;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  background: #fafafa;
+  box-shadow: none;
+  border: 1px solid #bbb;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  background: #fff;
+}
+
+form.search input[type="text"] {
+  border-radius: 0.25em;
+  border-top-color: #bbb;
+}
+/* MISC */
+
+#main {
+}
+#main p.notice,
+#main p.notes {
+  max-width: 52em;
+  margin: 1rem auto;
+}
+
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  box-shadow: 0 0.1rem 0.25rem -0.15rem rgba(0, 0, 0, 0.9);
+  border: none;
+  padding: 0.5rem 1rem;
+}
+/*HELP*/
+span.symbol {
+  color: #111;
+  display: inline-block;
+}
+span.question {
+  background: #ccc;
+  border: none;
+  box-shadow: none;
+}

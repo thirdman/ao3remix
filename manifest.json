@@ -1,8 +1,8 @@
 {
     // Comments are accepted in the manifest, even though it is JSON.
     "manifest_version": 3,
-    "name": "Chrome Extension v3 Starter",
-    "description": "A minimal example of a chrome extension using manifest v3",
+    "name": "AO3 Remix",
+    "description": "Restyling of AO3 website, and additional features",
     "version": "0.0.1",
     "icons": {
         "16": "logo/logo-16.png",
@@ -11,10 +11,12 @@
     },
     "options_page": "settings/settings.html",
     "action": {
-        "default_title": "Chrome Addon v3 Starter",
+        "default_title": "AO3 Style Remix",
         "default_popup": "popup/popup.html"
     },
-    "permissions": [],
+    "permissions": [
+        "tabs", "scripting"
+      ],
     "host_permissions": [
         "*://*/*"
     ],
@@ -23,6 +25,13 @@
     },
     "content_scripts": [{
         "js": ["foreground.js"],
-        "matches": ["https://github.com/*"]
-    }]
+        "css": ["styles/styles.css"],
+        "matches": ["https://archiveofourown.org/*"],
+        "run_at": "document_start"
+    }],
+    "web_accessible_resources": [{
+        "resources": [ "styles/styles.css" ],
+        "matches": [ "https://archiveofourown.org/*" ]
+      }
+    ]
 }
